@@ -24,6 +24,7 @@ async function bootstrap() {
     new ValidationPipe({
       whitelist: true,
       transform: true,
+      forbidUnknownValues: true,
     }),
   );
 
@@ -32,6 +33,7 @@ async function bootstrap() {
     .setTitle('Uruggo API')
     .setDescription('Uruggo API description')
     .setVersion('1.0')
+    .addBearerAuth()
     .build();
 
   const document = SwaggerModule.createDocument(app, options);

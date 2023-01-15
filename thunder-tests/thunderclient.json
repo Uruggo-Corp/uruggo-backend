@@ -1,0 +1,131 @@
+[
+  {
+    "_id": "3fb166b1-842b-472c-bd17-204eeb920ecb",
+    "colId": "1508737f-7e52-459d-8300-0aa5cded420e",
+    "containerId": "44e98ebf-7e3b-4eef-9698-0352567e0c25",
+    "name": "Create user",
+    "url": "/users",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2023-01-12T18:31:29.413Z",
+    "modified": "2023-01-15T01:49:12.030Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"firstName\": \"John\",\n  \"lastName\": \"Doe\",\n  \"email\": \"johndoe@company.com\",\n  \"phoneNumber\": \"+2349070933598\",\n  \"profilePicture\": \"https://example.com/profile-picture.jpg\",\n  \"password\": \"Password123!\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "622a9a90-ab93-4ab3-a4be-76577929faa9",
+    "colId": "1508737f-7e52-459d-8300-0aa5cded420e",
+    "containerId": "44e98ebf-7e3b-4eef-9698-0352567e0c25",
+    "name": "Create agent",
+    "url": "/users/agent",
+    "method": "POST",
+    "sortNum": 20000,
+    "created": "2023-01-13T02:50:22.362Z",
+    "modified": "2023-01-15T01:52:34.733Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"firstName\": \"Sheyzi\",\n  \"lastName\": \"Silver\",\n  \"email\": \"testapp.sheyzi@gmail.com\",\n  \"phoneNumber\": \"+2349070933598\",\n  \"profilePicture\": \"https://example.com/profile-picture.jpg\",\n  \"password\": \"Password123\",\n  \"agency\": \"Cooversa\",\n  \"address\": \"7, daniel arigbe street.\",\n  \"idNumber\": \"516yhnks23\",\n  \"idType\": \"passport\",\n  \"idImages\": {\n    \"idFront\": \"ID Front\",\n    \"idBack\": \"ID Back\"\n  }\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "7f97872c-66d9-43ca-ac1a-081c804f203f",
+    "colId": "1508737f-7e52-459d-8300-0aa5cded420e",
+    "containerId": "44e98ebf-7e3b-4eef-9698-0352567e0c25",
+    "name": "Get all users",
+    "url": "/users?filter.role=agent&sort.createdAt=asc",
+    "method": "GET",
+    "sortNum": 20000,
+    "created": "2023-01-13T03:40:52.576Z",
+    "modified": "2023-01-13T04:14:21.817Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "filter.role",
+        "value": "agent",
+        "isPath": false
+      },
+      {
+        "name": "sort.createdAt",
+        "value": "asc",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "34013e87-b27c-422e-a01d-708035eac603",
+    "colId": "1508737f-7e52-459d-8300-0aa5cded420e",
+    "containerId": "44e98ebf-7e3b-4eef-9698-0352567e0c25",
+    "name": "Get user by id",
+    "url": "/users/1",
+    "method": "GET",
+    "sortNum": 30000,
+    "created": "2023-01-13T04:41:16.658Z",
+    "modified": "2023-01-13T04:41:22.607Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "f24f6950-1ac5-497e-9d9d-b4571713c642",
+    "colId": "1508737f-7e52-459d-8300-0aa5cded420e",
+    "containerId": "25982de3-c6b3-4594-b34b-044b71cd8056",
+    "name": "Login user",
+    "url": "/auth/login",
+    "method": "POST",
+    "sortNum": 40000,
+    "created": "2023-01-13T05:19:28.893Z",
+    "modified": "2023-01-15T01:30:45.896Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"email\": \"testapp.sheyzi@gmail.com\",\n  \"password\": \"Password123\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "f5ef97d4-b312-4c6c-a8e8-cd1b439104a5",
+    "colId": "1508737f-7e52-459d-8300-0aa5cded420e",
+    "containerId": "25982de3-c6b3-4594-b34b-044b71cd8056",
+    "name": "Get logged in user",
+    "url": "/auth/me",
+    "method": "GET",
+    "sortNum": 50000,
+    "created": "2023-01-13T05:31:14.776Z",
+    "modified": "2023-01-15T01:30:32.670Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "5e0ca7af-4da3-4de5-b904-9b4f88ca0970",
+    "colId": "1508737f-7e52-459d-8300-0aa5cded420e",
+    "containerId": "a68c1cd4-4ef2-47a4-a7f8-99f5ecb9dfb6",
+    "name": "Create a new listing",
+    "url": "/listings",
+    "method": "POST",
+    "sortNum": 60000,
+    "created": "2023-01-15T01:20:34.379Z",
+    "modified": "2023-01-15T01:45:17.299Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"title\": \"2 bedroom apartment\",\n  \"description\": \"A nice apartment with a nice view\",\n  \"price\": 1000,\n  \"location\": {\n    \"address\": \"123 Main St\",\n    \"city\": \"Ikeja\",\n    \"state\": \"Lagos\",\n    \"country\": \"Nigeria\",\n    \"zipCode\": \"104101\"\n  },\n  \"bedrooms\": 2,\n  \"bathrooms\": 2,\n  \"leaseTerm\": \"month\",\n  \"availableFrom\": \"2023-01-15T01:28:12.260Z\"\n}",
+      "form": []
+    },
+    "tests": []
+  }
+]
