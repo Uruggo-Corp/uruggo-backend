@@ -1,0 +1,42 @@
+[
+  {
+    "_id": "1508737f-7e52-459d-8300-0aa5cded420e",
+    "colName": "Uruggo",
+    "created": "2023-01-12T18:31:14.701Z",
+    "sortNum": 10000,
+    "folders": [
+      {
+        "_id": "44e98ebf-7e3b-4eef-9698-0352567e0c25",
+        "name": "Users",
+        "containerId": "",
+        "created": "2023-01-12T18:31:20.025Z",
+        "sortNum": 10000
+      },
+      {
+        "_id": "25982de3-c6b3-4594-b34b-044b71cd8056",
+        "name": "Auth",
+        "containerId": "",
+        "created": "2023-01-13T05:19:20.571Z",
+        "sortNum": 20000
+      },
+      {
+        "_id": "a68c1cd4-4ef2-47a4-a7f8-99f5ecb9dfb6",
+        "name": "Listings",
+        "containerId": "",
+        "created": "2023-01-15T01:20:25.285Z",
+        "sortNum": 30000
+      }
+    ],
+    "settings": {
+      "headers": [],
+      "auth": {
+        "type": "bearer",
+        "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RhcHAuc2hleXppQGdtYWlsLmNvbSIsInN1YiI6IjYzYzFjMGM0NTJjZDVkMjBlNTMzNWE5ZiIsInNjb3BlIjoiYWNjZXNzX3Rva2VuIiwiaWF0IjoxNjczNzQ2MjQ1LCJleHAiOjE2NzM3NDcxNDUsImF1ZCI6Imh0dHBzOi8vdXJ1Z2dvLmNvbSIsImlzcyI6Imh0dHBzOi8vYXBpLnVydWdnby5jb20ifQ.DJsEN7VYct2dEsEAUVXwg75_uZqhdZaM_6SYeGRjbGc"
+      },
+      "tests": [],
+      "options": {
+        "baseUrl": "http://localhost:8000"
+      }
+    }
+  }
+]
