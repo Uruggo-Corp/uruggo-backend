@@ -16,7 +16,7 @@ import {
   ApiTags,
   ApiQuery,
   ApiNotFoundResponse,
-  ApiBearerAuth
+  ApiBearerAuth,
 } from '@nestjs/swagger';
 import { ListingsService } from './listings.service';
 import { CreateListingDto } from './dtos/create-listing.dto';
@@ -116,6 +116,7 @@ export class ListingsController {
     description: 'The listing could not be marked as active',
   })
   @UseGuards(JwtAuthGuard, RoleGuard([Role.ADMIN]))
+  @ApiBearerAuth()
   async markAsActive(@Param('slug') slug: string) {
     return this.listingsService.markAsActive(slug);
   }
@@ -133,6 +134,7 @@ export class ListingsController {
     description: 'The listing could not be marked as closed',
   })
   @UseGuards(JwtAuthGuard, RoleGuard([Role.AGENT]))
+  @ApiBearerAuth()
   async markAsClosed(@Param('slug') slug: string, @CurrentUser() user: User) {
     return this.listingsService.markAsClosed(slug, user);
   }
@@ -150,6 +152,7 @@ export class ListingsController {
     description: 'The listing could not be marked as rented',
   })
   @UseGuards(JwtAuthGuard, RoleGuard([Role.AGENT]))
+  @ApiBearerAuth()
   async markAsRented(@Param('slug') slug: string, @CurrentUser() user: User) {
     return this.listingsService.markAsRented(slug, user);
   }
