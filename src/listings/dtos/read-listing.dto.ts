@@ -1,4 +1,5 @@
 import { ApiProperty } from '@nestjs/swagger';
+import { ReadUserWithAgentProfileDto } from '../../users/dtos/read-user.dto';
 import { LeaseTerm, Location } from '../schemas/listings.schema';
 
 export class ReadListingDto {
@@ -22,6 +23,13 @@ export class ReadListingDto {
     required: true,
   })
   title: string;
+
+  @ApiProperty({
+    description: 'The slug of the listing',
+    example: '2-bedroom-apartment',
+    required: true,
+  })
+  slug: string;
 
   @ApiProperty({
     description: 'The description of the listing',
@@ -86,4 +94,13 @@ export class ReadListingDto {
     required: true,
   })
   updatedAt: Date;
+}
+
+export class ReadListingWithAgentDto extends ReadListingDto {
+  @ApiProperty({
+    description: 'The agent that created the listing',
+    required: true,
+    type: ReadUserWithAgentProfileDto,
+  })
+  agent: ReadUserWithAgentProfileDto;
 }

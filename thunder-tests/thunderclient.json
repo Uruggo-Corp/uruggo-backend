@@ -27,12 +27,12 @@
     "method": "POST",
     "sortNum": 20000,
     "created": "2023-01-13T02:50:22.362Z",
-    "modified": "2023-01-15T01:52:34.733Z",
+    "modified": "2023-01-15T04:51:19.738Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"firstName\": \"Sheyzi\",\n  \"lastName\": \"Silver\",\n  \"email\": \"testapp.sheyzi@gmail.com\",\n  \"phoneNumber\": \"+2349070933598\",\n  \"profilePicture\": \"https://example.com/profile-picture.jpg\",\n  \"password\": \"Password123\",\n  \"agency\": \"Cooversa\",\n  \"address\": \"7, daniel arigbe street.\",\n  \"idNumber\": \"516yhnks23\",\n  \"idType\": \"passport\",\n  \"idImages\": {\n    \"idFront\": \"ID Front\",\n    \"idBack\": \"ID Back\"\n  }\n}",
+      "raw": "{\n  \"firstName\": \"Oluwaseyifunmi\",\n  \"lastName\": \"Oyefeso\",\n  \"email\": \"gistkiosk@gmail.com\",\n  \"phoneNumber\": \"+2349013334883\",\n  \"profilePicture\": \"https://example.com/profile-picture.jpg\",\n  \"password\": \"Password123\",\n  \"agency\": \"Cooversa\",\n  \"address\": \"7, daniel arigbe street.\",\n  \"idNumber\": \"516yhnks23-ES\",\n  \"idType\": \"passport\",\n  \"idImages\": {\n    \"idFront\": \"ID Front\",\n    \"idBack\": \"ID Back\"\n  }\n}",
       "form": []
     },
     "tests": []
@@ -85,12 +85,12 @@
     "method": "POST",
     "sortNum": 40000,
     "created": "2023-01-13T05:19:28.893Z",
-    "modified": "2023-01-15T01:30:45.896Z",
+    "modified": "2023-01-15T04:52:32.527Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"email\": \"testapp.sheyzi@gmail.com\",\n  \"password\": \"Password123\"\n}",
+      "raw": "{\n  \"email\": \"gistkiosk@gmail.com\",\n  \"password\": \"Password123\"\n}",
       "form": []
     },
     "tests": []
@@ -118,14 +118,95 @@
     "method": "POST",
     "sortNum": 60000,
     "created": "2023-01-15T01:20:34.379Z",
-    "modified": "2023-01-15T01:45:17.299Z",
+    "modified": "2023-01-15T03:30:36.809Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"title\": \"2 bedroom apartment\",\n  \"description\": \"A nice apartment with a nice view\",\n  \"price\": 1000,\n  \"location\": {\n    \"address\": \"123 Main St\",\n    \"city\": \"Ikeja\",\n    \"state\": \"Lagos\",\n    \"country\": \"Nigeria\",\n    \"zipCode\": \"104101\"\n  },\n  \"bedrooms\": 2,\n  \"bathrooms\": 2,\n  \"leaseTerm\": \"month\",\n  \"availableFrom\": \"2023-01-15T01:28:12.260Z\"\n}",
+      "raw": "{\n  \"title\": \"Room self contain\",\n  \"description\": \"A nice apartment with a nice view\",\n  \"price\": 2000,\n  \"location\": {\n    \"address\": \"104 Nawage street, Computer village\",\n    \"city\": \"Ikeja\",\n    \"state\": \"Lagos\",\n    \"country\": \"Nigeria\",\n    \"zipCode\": \"104101\"\n  },\n  \"bedrooms\": 1,\n  \"bathrooms\": 1,\n  \"leaseTerm\": \"yearly\",\n  \"availableFrom\": \"2023-01-15T01:28:12.260Z\"\n}",
       "form": []
     },
+    "tests": []
+  },
+  {
+    "_id": "db3c991a-b601-4cd5-b930-a07a54744f61",
+    "colId": "1508737f-7e52-459d-8300-0aa5cded420e",
+    "containerId": "a68c1cd4-4ef2-47a4-a7f8-99f5ecb9dfb6",
+    "name": "Get all listings",
+    "url": "/listings?filter.status=active&search=5 bedroom",
+    "method": "GET",
+    "sortNum": 80000,
+    "created": "2023-01-15T03:11:08.527Z",
+    "modified": "2023-01-15T04:42:35.651Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "filter.status",
+        "value": "active",
+        "isPath": false
+      },
+      {
+        "name": "search",
+        "value": "5 bedroom ",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "88fc90da-5a7a-4946-becf-e3a86bb032ff",
+    "colId": "1508737f-7e52-459d-8300-0aa5cded420e",
+    "containerId": "a68c1cd4-4ef2-47a4-a7f8-99f5ecb9dfb6",
+    "name": "Get one listing",
+    "url": "/listings/3-bedroom-apartment",
+    "method": "GET",
+    "sortNum": 90000,
+    "created": "2023-01-15T03:37:55.227Z",
+    "modified": "2023-01-15T03:39:16.186Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "835f793d-9ce9-448d-b76c-18aefcd1b111",
+    "colId": "1508737f-7e52-459d-8300-0aa5cded420e",
+    "containerId": "a68c1cd4-4ef2-47a4-a7f8-99f5ecb9dfb6",
+    "name": "Mark listing as active (Admin)",
+    "url": "/listings/5-bedroom-apartment/mark-as-active",
+    "method": "PATCH",
+    "sortNum": 100000,
+    "created": "2023-01-15T03:54:54.175Z",
+    "modified": "2023-01-15T03:59:35.729Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "05eb60d3-6d7b-4c1f-a4e6-f1612e8d26a2",
+    "colId": "1508737f-7e52-459d-8300-0aa5cded420e",
+    "containerId": "a68c1cd4-4ef2-47a4-a7f8-99f5ecb9dfb6",
+    "name": "Mark listing as closed",
+    "url": "/listings/5-bedroom-apartment/mark-as-closed",
+    "method": "PATCH",
+    "sortNum": 110000,
+    "created": "2023-01-15T04:51:29.809Z",
+    "modified": "2023-01-15T04:52:16.371Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "48392ceb-2583-402b-9380-91ee2dd35923",
+    "colId": "1508737f-7e52-459d-8300-0aa5cded420e",
+    "containerId": "a68c1cd4-4ef2-47a4-a7f8-99f5ecb9dfb6",
+    "name": "Mark listing as rented",
+    "url": "/listings/5-bedroom-apartment/mark-as-rented",
+    "method": "PATCH",
+    "sortNum": 120000,
+    "created": "2023-01-15T04:54:02.531Z",
+    "modified": "2023-01-15T04:54:15.704Z",
+    "headers": [],
+    "params": [],
     "tests": []
   }
 ]

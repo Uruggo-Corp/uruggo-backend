@@ -81,8 +81,6 @@ export const getPaginatedResult = async <T>(
 ): Promise<PaginatedResultDto<T>> => {
   const startIndex = (paginateParams.page - 1) * paginateParams.limit;
 
-  console.log(paginateParams);
-
   const results: T[] = await model
     .find(paginateParams.filter as FilterQuery<T>)
     .limit(paginateParams.limit)
