@@ -31,7 +31,7 @@
       "headers": [],
       "auth": {
         "type": "bearer",
-        "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RhcHAuc2hleXppQGdtYWlsLmNvbSIsInN1YiI6IjYzYzFjMGM0NTJjZDVkMjBlNTMzNWE5ZiIsInNjb3BlIjoiYWNjZXNzX3Rva2VuIiwiaWF0IjoxNjczNzQ2MjQ1LCJleHAiOjE2NzM3NDcxNDUsImF1ZCI6Imh0dHBzOi8vdXJ1Z2dvLmNvbSIsImlzcyI6Imh0dHBzOi8vYXBpLnVydWdnby5jb20ifQ.DJsEN7VYct2dEsEAUVXwg75_uZqhdZaM_6SYeGRjbGc"
+        "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RhcHAuc2hleXppQGdtYWlsLmNvbSIsInN1YiI6IjYzYzFjMGM0NTJjZDVkMjBlNTMzNWE5ZiIsInNjb3BlIjoiYWNjZXNzX3Rva2VuIiwiaWF0IjoxNjczNzU4MzA3LCJleHAiOjE2NzM3NTkyMDcsImF1ZCI6Imh0dHBzOi8vdXJ1Z2dvLmNvbSIsImlzcyI6Imh0dHBzOi8vYXBpLnVydWdnby5jb20ifQ.ctybZljNYKXWDbuLEpv8e8C0WLFd7uZ2i0TPez-guEU"
       },
       "tests": [],
       "options": {

@@ -15,7 +15,7 @@ export enum LeaseTerm {
 export enum ListingStatus {
   pending = 'pending',
   active = 'active',
-  expired = 'expired',
+  closed = 'closed',
   rented = 'rented',
 }
 
@@ -77,6 +77,9 @@ export class Listing {
 
   @Prop({ required: true })
   title: string;
+
+  @Prop()
+  slug: string;
 
   @Prop({ required: true })
   description: string;

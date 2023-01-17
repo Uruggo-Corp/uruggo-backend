@@ -33,7 +33,9 @@ export class PaginateParams {
   limit: number;
 
   @ApiProperty({ required: false })
-  filter?: { [key: string]: string };
+  filter?: {
+    [key: string]: any;
+  };
 
   @ApiProperty({ required: false, example: { 'sort.name': 'asc' } })
   sort?: { [key: string]: string }[];
