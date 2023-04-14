@@ -6,6 +6,7 @@ import { UsersModule } from './users/users.module';
 import { HelpersModule } from './shared/libs/helpers/helpers.module';
 import { AuthModule } from './auth/auth.module';
 import { ListingsModule } from './listings/listings.module';
+import { UploadModule } from './upload/upload.module';
 import * as Joi from '@hapi/joi';
 
 @Module({
@@ -33,6 +34,7 @@ import * as Joi from '@hapi/joi';
     HelpersModule,
     AuthModule,
     ListingsModule,
+    UploadModule,
   ],
   controllers: [AppController],
 })

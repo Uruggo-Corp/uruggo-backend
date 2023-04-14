@@ -2,6 +2,7 @@ import { ApiProperty } from '@nestjs/swagger';
 import {
   IsEmail,
   IsNotEmpty,
+  IsOptional,
   IsPhoneNumber,
   IsString,
   IsStrongPassword,
@@ -51,7 +52,7 @@ export class CreateUserDto {
     example: 'https://example.com/profile-picture.jpg',
     required: true,
   })
-  @IsNotEmpty({ message: 'Profile picture is required' })
+  @IsOptional()
   @IsString()
   @IsUrl({
     protocols: ['http', 'https'],

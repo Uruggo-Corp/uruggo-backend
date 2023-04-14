@@ -84,7 +84,7 @@ export class User {
   @Exclude()
   password: string;
 
-  @Prop({ required: true })
+  @Prop({ required: false })
   profilePicture: string;
 
   @Prop({

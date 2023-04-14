@@ -1,1 +1,52 @@
-[]
+[
+  {
+    "_id": "007f6064-7c16-4e99-b70c-23db61f75539",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8000/upload",
+    "url": "http://localhost:8000/upload",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2023-03-16T10:48:38.266Z",
+    "modified": "2023-03-16T10:48:38.266Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [],
+      "files": [
+        {
+          "name": "file",
+          "value": "../../../Pictures/Screenshots/Screenshot from 2023-03-16 08-50-55.png"
+        }
+      ]
+    },
+    "tests": []
+  },
+  {
+    "_id": "f5a9feba-719f-4eb5-b64d-dff5bba49dc5",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8000/upload",
+    "url": "http://localhost:8000/upload",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2023-03-16T10:48:43.714Z",
+    "modified": "2023-03-16T10:48:43.714Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [],
+      "files": [
+        {
+          "name": "file",
+          "value": "../../../Pictures/Screenshots/Screenshot from 2023-03-16 08-50-55.png"
+        }
+      ]
+    },
+    "tests": []
+  }
+]
